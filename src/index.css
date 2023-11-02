@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.text-wrap {
+  word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+.bot-army {
+  overflow-x: scroll;
+  min-height: 250px;
+  width: 100%;
+  background-color: black;
+}
+
+
+
+.all-bots-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color:black;
+}
+
+.bot-container {
+  width: 180px;
+  margin: 8px 5px;
+  padding: 2px 8px;
+  background-color:green;
+  overflow-wrap: break-word;
+}
+
+.bot-container-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-top: solid 2px white;
+}
+
+.bot-container-footer > div {
+  margin: 2px;
+  padding: 5px;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bot-name {
+  font-weight: 750;
+  font-size: larger;
+}
+
+.text,
+.ptext,h1 {
+  display: inline-block;
+  vertical-align: top;
+  
+}
+
+.text {
+  color: white;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3em;
+  background-color: blue;
+  border-radius: 50%;
+  padding: 30px 40px;
+  margin-top: 2px;
+  
+ 
+}
+
+.ptext {
+  color: white;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3em;
+  background-color: blue;
+  border-radius: 50%;
+  padding: 30px 40px;
+  margin-top: 2px;
+  margin-left: 700px;
+ 
+}
+
+.red-release{
+color: white;
+background-color: red;
+font-size: large;
+font-weight: bold;
+font-size: large;
+
+}
+.red-delete{
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: x-large;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+.h{
+ 
+  color: black;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3em;
+  background-color: red;
+  border-radius: 50%;
+  padding: 30px 40px;
+  margin-bottom: 2px;
+  margin-left: 550px;
+ 
+
+}
