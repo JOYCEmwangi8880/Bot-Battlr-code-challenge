@@ -6,7 +6,7 @@ function App() {
     <div className="App">
 
 
-       <h1 className="h">COLLECTION OF BOTS</h1>
+       {/* <h1 >COLLECTION OF BOTS</h1> */}
 
       <BotsPage />
     </div>
