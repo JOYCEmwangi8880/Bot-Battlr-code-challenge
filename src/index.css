@@ -17,9 +17,13 @@ body {
 
 .bot-army {
   overflow-x: scroll;
-  min-height: 250px;
-  width: 100%;
-  background-color: black;
+  background-color: gray;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  
+  
+  
+ 
 }
 
 
@@ -34,10 +38,12 @@ body {
 .bot-container {
   width: 180px;
   margin: 8px 5px;
-  padding: 2px 8px;
-  background-color:green;
+  padding: 5px 17px;
+  background-color: mediumturquoise;
   overflow-wrap: break-word;
+  height: auto; 
 }
+
 
 .bot-container-footer {
   display: flex;
@@ -70,30 +76,85 @@ body {
 }
 
 .text {
-  color: white;
+  color: black;
   align-items: center;
   font-weight: bold;
   font-size: 3em;
-  background-color: blue;
+  background-color: green;
   border-radius: 50%;
   padding: 30px 40px;
   margin-top: 2px;
-  
- 
+  animation: blink 2s infinite alternate, dance 2s infinite;
 }
+
+@keyframes blink {
+  0%, 100% {
+    background-color: green;
+    color: black;
+  }
+  50% {
+    background-color: red;
+    color: white;
+  }
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 
 .ptext {
   color: white;
-  align-items: center;
   font-weight: bold;
   font-size: 3em;
-  background-color: blue;
+  background-color: black;
   border-radius: 50%;
   padding: 30px 40px;
   margin-top: 2px;
   margin-left: 700px;
- 
+  animation: blink 2s infinite alternate, dance 2s infinite;
 }
+
+@keyframes blink {
+  0%, 100% {
+    background-color: black;
+    color: white;
+  }
+  50% {
+    background-color: red;
+    color: yellow;
+  }
+  30%{
+    background-color: blue;
+    color: aqua;
+  }
+  10%{
+    background-color: green;
+    color: purple;
+  }
+}
+@keyframes dance {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  30%{
+    background-color: blue;
+    color: aqua;
+  }
+  10%{
+    background-color: green;
+    color: purple;
+  }
+}
+
 
 .red-release{
 color: white;
@@ -125,4 +186,26 @@ font-size: large;
   margin-left: 550px;
  
 
+}
+
+.sort-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 38px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  background-color: pink;
+ 
+}
+
+.sort-bar select {
+  margin-left: 10px;
+  padding: 8px;
+  color: blue;
+  background-color: yellow;
+  font-size: 20px;
+  font-weight: bold;
 }
