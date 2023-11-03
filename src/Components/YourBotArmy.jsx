@@ -44,9 +44,13 @@ function YourBotArmy({ selectedBots, releaseFromArmy }) {
     <div className="ui segment inverted olive bot-army">
       <div className="ui five column grid">
         <div className="row bot-army-row">
+
+         
           <h2 className="text">YOUR BOT ARMY</h2>
+
           {bots.length > 0 ? bots : <p className="ptext">NO BOTS SELECTED</p>}
         </div>
+        <h1 className="he">COLLECTION OF BOTS</h1>
       </div>
     </div>
   );
