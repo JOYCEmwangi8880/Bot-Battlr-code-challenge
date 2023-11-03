@@ -3,8 +3,7 @@ import SortBar from "./SortBar";
 
 function BotCollection({ addToArmy }) {
   const [allBotsData, setAllBotsData] = useState([]);
-  const [sortOption, setSortOption] = useState("health"); // Default sorting by health
-
+  const [sortOption, setSortOption] = useState("health","damage", "armor"); 
   useEffect(() => {
     fetch("http://localhost:3000/bots")
       .then((res) => res.json())
