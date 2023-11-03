@@ -1,59 +1,35 @@
 import React from "react";
 
-const botTypeClasses = {
-  Assault: "Assault",
-  Defender: "Defender",
-  Support: "Support",
-  Medic: "Medic",
-  Witch: "Witch",
-  Captain: "Captain",
-};
-
-function BotCard({ bot  }) {
-
- 
+function BotCard({ bot }) {
   return (
-    <div className="ui column">
-      <div className="ui card"  key={bot.id} onClick={() => console.log("add code to connect event listener")}  >
-
+    <div className="bot-container">
+      <div className="bot-card" key={bot.id} onClick={() => console.log("add code to connect event listener")}>
         <div className="image">
           <img alt="oh no!" src={bot.avatar_url} />
         </div>
-
         <div className="content">
-
-          <div className="header"> {bot.name}
-            <i className={botTypeClasses[bot.bot_class]} />
+          <div className="header">
+            {bot.name}
           </div>
-
-          <div className="meta text-wrap">
-            <small>{bot.catchphrase}</small>
+          <div className="meta">
+            {bot.catchphrase}
           </div>
         </div>
-        <div className="extra content">
-
+        <div className="extra">
           <span>
-            <i className="icon heartbeat" /> 
             {bot.health}
           </span>
-
           <span>
-            <i className="icon lightning" />
             {bot.damage}
           </span>
-
           <span>
-            <i className="icon shield" />
             {bot.armor}
           </span>
-
-          <span>
-            <div className="ui center aligned segment basic">
-              <button className="ui mini red button" onClick={() => console.log("add code to connect event listener") } >
-                X
-              </button>
-            </div>
-          </span>
+          <div className="center-aligned-segment">
+            <button className="mini-button" onClick={() => console.log("add code to connect event listener")}>
+              X
+            </button>
+          </div>
         </div>
       </div>
     </div>
