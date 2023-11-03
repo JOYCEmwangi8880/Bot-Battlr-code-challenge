@@ -9,22 +9,13 @@ body {
 }
 
 
-
-
-
-
-
-
 .bot-army {
   overflow-x: scroll;
   background-color: gray;
   padding-top: 90px;
   padding-bottom: 40px;
   
-  
-  
- 
-}
+  }
 
 
 
@@ -171,22 +162,37 @@ font-size: large;
   font-size: x-large;
   cursor: pointer;
   font-weight: bold;
-
 }
-.h{
- 
-  color: black;
-  align-items: center;
-  font-weight: bold;
-  font-size: 3em;
-  background-color: red;
-  border-radius: 50%;
-  padding: 30px 40px;
-  margin-bottom: 2px;
-  margin-left: 550px;
- 
-
-}
+  .he {
+    color: black;
+    align-items: center;
+    font-weight: bold;
+    font-size: 3em;
+    border-radius: 50%;
+    padding: 30px 40px;
+    margin-bottom: 2px;
+    margin-left: 550px;
+    animation: blink 4s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: blue;
+    }
+    50% {
+      background-color: green;
+    }
+    75% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: orange;
+    }
+  }
+  
 
 .sort-bar {
   display: flex;
