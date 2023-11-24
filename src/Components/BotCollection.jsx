@@ -5,9 +5,14 @@ function BotCollection({ addToArmy }) {
   const [allBotsData, setAllBotsData] = useState([]);
   const [sortOption, setSortOption] = useState("health","damage", "armor"); 
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("https://api.jsonbin.io/v3/b/6560679b12a5d376599de050",{
+      method:'GET',
+      headers:{
+        'X-Master-Key':'$2a$10$9ROnXRQEZ6Ahj3EwVniVSubk0H3W3pAUu8XtzkbktwX.uvHIk1nqq'
+      },
+    })
       .then((res) => res.json())
-      .then((data) => setAllBotsData(data))
+      .then((data) => setAllBotsData(data.record.bots))
       .catch((e) => console.log(e));
   }, []);
 
@@ -17,7 +22,7 @@ function BotCollection({ addToArmy }) {
 
   const handleDeleteBot = (botId) => {
     console.log("Deleting bot with ID:", botId);
-    fetch(`http://localhost:3000/bots/${botId}`, {
+    fetch(`https://api.jsonbin.io/v3/b/6560679b12a5d376599de050/${botId}`, {
       method: "DELETE",
     })
       .then((res) => {
